@@ -3,19 +3,17 @@ import Band from '../components/Band'
 
 const TwoFeetPage = () => {
   return (
-    <ul>
-      <Band
-        image="./images/imgtwofeet.jpg"
-        name="Two Feet"
-        mostRecent="Most recent album: Pink."
-        released="Released: 2020."
-        description="In Two Feet’s new album Pink, American singer/songwriter Zachary
+    <Band
+      image="./images/imgtwofeet.jpg"
+      name="Two Feet"
+      mostRecent="Most recent album: Pink."
+      released="Released: 2020."
+      description="In Two Feet’s new album Pink, American singer/songwriter Zachary
       William Dess takes his well-known blend of electronica and soul to new
       heights, reaching a sound that comes across almost like a movie score.
       The focus is largely on Dess’ skills as a producer, with the beats
       driving the mood for the most part."
-      />
-    </ul>
+    />
   )
 }
 
