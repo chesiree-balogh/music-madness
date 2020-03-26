@@ -14,7 +14,7 @@ const App = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/khruangbin">Khruangbin</Link>
@@ -28,7 +28,7 @@ const App = () => {
         </ul>
       </nav>
       <Switch>
-        <Route exact path="/home" component={HomePage}></Route>
+        <Route exact path="/" component={HomePage}></Route>
         <Route exact path="/khruangbin" component={KhruangbinPage}></Route>
         <Route exact path="/the90sFlav" component={The90sFlavPage}></Route>
         <Route exact path="/twoFeet" component={TwoFeetPage}></Route>
