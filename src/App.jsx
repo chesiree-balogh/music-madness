@@ -1,33 +1,38 @@
 import React from 'react'
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
-import Page from './pages/Page'
-import Page2 from './pages/Page2'
+// import Page from './pages/Page'
+// import Page2 from './pages/Page2'
 import HomePage from './pages/HomePage'
 import NotFound from './pages/NotFound'
+import KhruangbinPage from './pages/KhruangbinPage'
+import The90sFlavPage from './pages/The90sFlavPage'
+import TwoFeetPage from './pages/TwoFeetPage'
 
 const App = () => {
   return (
     <Router>
-      <header>
-        <h1>Welcome to my SPA</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Go Home</Link>
-            </li>
-            <li>
-              <Link to="/1">Page 1</Link>
-            </li>
-            <li>
-              <Link to="/2">Page 2</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/home">Home</Link>
+          </li>
+          <li>
+            <Link to="/khruangbin">Khryangbin</Link>
+          </li>
+          <li>
+            <Link to="the90sFlav">90sFlav</Link>
+          </li>
+          <li>
+            <Link to="/twoFeet">Two Feet</Link>
+          </li>
+        </ul>
+      </nav>
       <Switch>
-        <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/1" component={Page}></Route>
-        <Route exact path="/2" component={Page2}></Route>
+        <Route exact path="/home" component={HomePage}></Route>
+        <Route exact path="/khruangbin" component={KhruangbinPage}></Route>
+        <Route exact path="/the90sFlav" component={The90sFlavPage}></Route>
+        <Route exact path="/twoFeet" component={TwoFeetPage}></Route>
+
         <Route path="*" component={NotFound}></Route>
       </Switch>
     </Router>
